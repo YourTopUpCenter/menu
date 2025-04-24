@@ -1,386 +1,931 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <title>Menu - Your TopUp Center – Trusted Game Top-Ups & Online Service </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover Your TopUp Center - your trusted partner for game top-ups, online subscriptions, and digital products. Experience fast, secure, and affordable services tailored to your needs | Get in Touch with Us for Any Queries or Support |আপনার বিশ্বস্ত অনলাইন ডিজিটাল গেম স্টোর Your TopUp Center  - এ আপনার প্রিয় গেম ক্রেডিট টপ-আপ করুন । ">
-    <meta name="keywords" content="Menu, Dashbord, Your TopUp Center, game top-ups, online subscriptions, digital services, affordable top-ups, trusted platform, online gaming services, secure online payments, digital products, YourTopUpCenter, Support, Customer Service, Your TopUp Center, #ytc24, topup, free fire, gaming,  seller,">
-    <meta name="author" content="Ali Hosen">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Your TopUp Center">
-    <meta property="og:title" content="Discover Our Mission to Provide Safe, Affordable, and Reliable Digital Services, Including Game Top-Ups and Online Subscriptions. | Your TopUp Center">
-    <meta property="og:image" content="https://i.postimg.cc/Qx3wdSvM/Adobe-Express-20231213-2151070-1.png">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="https://i.postimg.cc/mD3qYHH4/Picsart-24-01-20-22-35-57-863.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Menu - Your TopUp Center</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Cabin:ital,wght@0,400..700;1,400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="st.css">
-    
+<link href="https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+   
+        :root {
+            --primary-color: #006eff;
+            --secondary-color: #5a6a7e;
+            --success-color: #20c997;
+            --danger-color: #dc3545;
+            --warning-color: #ffc107;
+            --info-color: #17a2b8;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --white-color: #ffffff;
+            --body-font: 'Mina', sans-serif;
+            --heading-font: 'Mina', sans-serif;
+            --transition-speed: 0.3s ease;
+            --border-radius: 10px; /* Slightly rounder */
+            --box-shadow-light: 0 4px 15px rgba(0, 0, 0, 0.07);
+            --box-shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; overflow-x: hidden; }
+        body {
+            font-family: var(--body-font);
+            line-height: 1.7;
+            color: var(--dark-color);
+            background-color: #f9faff; /* Lighter background */
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 { font-family: var(--heading-font); font-weight: 700; margin-bottom: 1rem; color: #2c3e50; line-height: 1.3; }
+        a { text-decoration: none; color: var(--primary-color); transition: color var(--transition-speed); }
+        a:hover { color: #004bbd; }
+        ul { list-style: none; padding-left: 0; }
+        img { max-width: 100%; height: auto; display: block; border-radius: var(--border-radius); }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 15px; }
+        section { padding: 70px 0; position: relative; overflow: hidden; }
+        #menu-page-section { padding-top: 40px; }
+
+        .section-title { text-align: center; margin-bottom: 50px; font-size: 2.4rem; font-weight: 700; color: #333; position: relative; padding-bottom: 20px; }
+        .section-title i { color: var(--primary-color); margin-right: 10px; font-size: 2rem; vertical-align: middle; }
+        .section-title::after { content: ''; position: absolute; display: block; width: 80px; height: 4px; background: linear-gradient(90deg, var(--primary-color), var(--info-color)); bottom: 0; left: 50%; transform: translateX(-50%); border-radius: 2px; }
+
+        .btn { display: inline-block; padding: 12px 30px; background-image: linear-gradient(45deg, var(--primary-color) 0%, #007bff 100%); color: var(--white-color); border: none; border-radius: 50px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all var(--transition-speed); box-shadow: 0 5px 15px rgba(0, 110, 255, 0.3); text-transform: uppercase; letter-spacing: 0.5px; }
+        .btn:hover { background-image: linear-gradient(45deg, #0056b3 0%, var(--primary-color) 100%); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0, 110, 255, 0.4); }
+        .btn i { margin-left: 8px; }
+
+        /* --- Header Styles --- */
+        #main-header { background-color: rgba(255, 255, 255, 0.97); backdrop-filter: blur(8px); box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08); padding: 12px 0; position: sticky; top: 0; z-index: 1000; transition: background-color var(--transition-speed), padding var(--transition-speed); }
+        body.scrolled #main-header { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); }
+        #main-header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo a { font-size: 1.9rem; font-weight: 700; color: var(--primary-color); display: flex; align-items: center; transition: transform var(--transition-speed); }
+        .logo a:hover { transform: scale(1.03); }
+        .logo a i { margin-right: 10px; color: var(--success-color); font-size: 1.5rem; animation: rotateIcon 5s linear infinite; }
+        #main-nav ul { display: flex; flex-wrap: wrap; }
+        #main-nav ul li { margin-left: 25px; }
+        #main-nav ul li a { color: var(--dark-color); font-weight: 600; padding: 8px 0; position: relative; transition: color var(--transition-speed); letter-spacing: 0.3px; }
+        #main-nav ul li a.active { color: var(--primary-color); font-weight: 700; }
+        #main-nav ul li a.active::after, #main-nav ul li a:hover::after { content: ''; position: absolute; width: 100%; height: 3px; display: block; margin-top: 6px; left: 0; background: var(--primary-color); transition: width 0.4s ease-out, left 0.4s ease-out; border-radius: 2px; }
+        #main-nav ul li a::after { content: ''; position: absolute; width: 0; height: 3px; display: block; margin-top: 6px; right: 0; background: var(--primary-color); transition: width 0.4s ease-out, left 0.4s ease-out; border-radius: 2px; }
+        #main-nav ul li a:hover { color: var(--primary-color); }
+        .menu-toggle { display: none; font-size: 1.8rem; cursor: pointer; color: var(--dark-color); transition: color var(--transition-speed); }
+        .menu-toggle:hover { color: var(--primary-color); }
+
+        /* --- Menu Page Specific Styles --- */
+        .menu-intro p { text-align: center; color: var(--secondary-color); font-size: 1.1rem; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto; }
+
+        /* Notice Section */
+        #menu-notice {
+            background-color: var(--info-color);
+            color: var(--white-color);
+            padding: 15px 0;
+            margin-bottom: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow-light);
+            text-align: center;
+        }
+         #menu-notice p {
+             margin: 0;
+             font-weight: 500;
+             font-size: 1.05rem;
+         }
+         #menu-notice i {
+             margin-right: 10px;
+         }
+
+
+
+
+   .support-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1010; /* Ensure above other elements */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .support-main-btn {
+            width: 65px;
+            height: 65px;
+            background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--info-color) 100%);
+            color: var(--white-color);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.9rem;
+            cursor: pointer;
+            box-shadow: 0 6px 18px rgba(0, 110, 255, 0.4);
+            transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), box-shadow var(--transition-speed); /* Added cubic-bezier for bounce */
+            z-index: 1011;
+            border: 3px solid var(--white-color); /* White border */
+            position: relative; /* Needed for icon transition */
+            overflow: hidden; /* Clip icons during transition */
+            animation: pulse 2.5s infinite ease-in-out; /* Subtle pulse */
+        }
+        .support-main-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(0, 110, 255, 0.5);
+            animation-play-state: paused; /* Pause pulse on hover */
+        }
+        .support-main-btn i { /* Icon transition */
+            position: absolute;
+            transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+        }
+        .support-main-btn .fa-headset {
+            transform: rotate(0deg) scale(1);
+            opacity: 1;
+        }
+        .support-main-btn .fa-times {
+            transform: rotate(-90deg) scale(0.8);
+            opacity: 0;
+        }
+        .support-main-btn.active .fa-headset {
+            transform: rotate(90deg) scale(0.8);
+            opacity: 0;
+        }
+        .support-main-btn.active .fa-times {
+            transform: rotate(0deg) scale(1);
+            opacity: 1;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 6px 18px rgba(0, 110, 255, 0.4), 0 0 0 0 rgba(0, 110, 255, 0.4); }
+            70% { box-shadow: 0 6px 18px rgba(0, 110, 255, 0.4), 0 0 0 10px rgba(0, 110, 255, 0); }
+            100% { box-shadow: 0 6px 18px rgba(0, 110, 255, 0.4), 0 0 0 0 rgba(0, 110, 255, 0); }
+        }
+
+        .support-options {
+            position: absolute; /* Position relative to main button */
+            bottom: 80px; /* Start position above the main button */
+            right: 7.5px; /* Center options relative to main button width (65/2 - 50/2) */
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            /* Initial hidden state */
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+            pointer-events: none; /* Prevent clicks when hidden */
+        }
+
+        .support-options.active {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+        .support-options.active .support-option {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            visibility: visible;
+        }
+
+        .support-option {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            color: var(--white-color);
+            box-shadow: var(--box-shadow-medium);
+            text-decoration: none;
+            position: relative; /* Needed for tooltip */
+             /* Initial state for staggered animation */
+            opacity: 0;
+            transform: translateY(15px) scale(0.8);
+            visibility: hidden;
+            transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.3s ease-out, visibility 0.3s ease-out, box-shadow var(--transition-speed), background-color var(--transition-speed);
+        }
+
+        /* Staggered Animation Delays */
+        .support-options.active .support-option:nth-child(1) { transition-delay: 0.25s; }
+        .support-options.active .support-option:nth-child(2) { transition-delay: 0.2s; }
+        .support-options.active .support-option:nth-child(3) { transition-delay: 0.15s; }
+        .support-options.active .support-option:nth-child(4) { transition-delay: 0.1s; }
+
+        .support-option:hover {
+            transform: scale(1.18) rotate(5deg); /* Enhanced hover */
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Tooltip Styles */
+        .support-option::before {
+            content: attr(data-tooltip);
+            position: absolute;
+            right: 110%; /* Position to the left */
+            top: 50%;
+            transform: translateY(-50%) scale(0.8); /* Start slightly smaller */
+            background-color: rgba(44, 62, 80, 0.9); /* Dark background */
+            color: var(--white-color);
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity var(--transition-speed), transform var(--transition-speed);
+            pointer-events: none;
+        }
+        .support-option:hover::before {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) scale(1); /* Scale up */
+        }
+
+        /* Specific colors for support options */
+        .support-option.whatsapp { background-color: #25D366; }
+        .support-option.messenger { background-color: #0084FF; }
+        .support-option.call { background-color: var(--danger-color); }
+        .support-option.telegram { background-color: #2AABEE; }
+
+        /* --- Fixed Ad Banner Styles (Advanced) --- */
+        .fixed-ad-banner {
+            position: fixed;
+            bottom: 25px;
+            left: -400px; /* Start off-screen */
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.92), rgba(52, 73, 94, 0.95)); /* Darker gradient */
+            backdrop-filter: blur(6px);
+            color: var(--white-color);
+            padding: 12px 45px 12px 20px; /* More padding */
+            border-radius: 0 var(--border-radius) var(--border-radius) 0; /* Rounded right corners */
+            box-shadow: var(--box-shadow-medium);
+            z-index: 999;
+            max-width: 320px;
+            font-size: 0.9rem;
+            opacity: 1;
+             /* Animation */
+            animation: slideInAd 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) 1.5s forwards; /* Slide in after 1.5s delay */
+            transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth slide out */
+        }
+        /* Hidden state */
+        .fixed-ad-banner.hidden {
+             opacity: 0;
+             transform: translateX(-110%); /* Slide fully out */
+             pointer-events: none;
+        }
+
+        @keyframes slideInAd {
+            from { left: -400px; }
+            to { left: 0; } /* Slide in to position */
+        }
+
+        .ad-content {
+            display: flex; /* Use flex for icon and text */
+            align-items: center;
+            gap: 10px;
+            line-height: 1.5;
+        }
+        .ad-content i { /* Ad icon */
+            font-size: 1.5rem;
+            color: var(--warning-color);
+            flex-shrink: 0; /* Prevent icon from shrinking */
+        }
+        .ad-content a { color: var(--warning-color); font-weight: 600; text-decoration: underline; }
+        .ad-close-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.3rem; /* Larger close icon */
+            cursor: pointer;
+            padding: 5px;
+            line-height: 1;
+            transition: color var(--transition-speed), transform var(--transition-speed);
+        }
+        .ad-close-btn:hover {
+            color: var(--white-color);
+            transform: rotate(90deg);
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 768px) {
+            .support-widget { bottom: 15px; right: 15px; }
+            .support-main-btn { width: 60px; height: 60px; font-size: 1.7rem; }
+            .support-option { width: 45px; height: 45px; font-size: 1.4rem; }
+            .support-options { bottom: 75px; right: 7.5px; gap: 12px; }
+            .support-option::before { display: none; } /* Hide tooltips on smaller screens */
+
+            .fixed-ad-banner { left: -400px; bottom: 15px; padding: 10px 40px 10px 15px; font-size: 0.85rem; max-width: 280px;}
+            .ad-close-btn { font-size: 1.1rem; top: 4px; right: 4px;}
+
+      
+        }
+        @media (max-width: 480px) {
+             .support-widget { bottom: 10px; right: 10px; }
+             .support-main-btn { width: 55px; height: 55px; font-size: 1.6rem; }
+             .support-option { width: 40px; height: 40px; font-size: 1.3rem; }
+             .support-options { bottom: 70px; right: 7.5px; gap: 10px; }
+
+             .fixed-ad-banner { left: -400px; bottom: 10px; max-width: calc(100vw - 20px); border-radius: var(--border-radius); /* Standard radius on small screens */ }
+        }
+
+        /* --- Animations (Keep from previous) --- */
+        @keyframes rotateIcon { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .fade-inX { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease-out, transform 0.7s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        @keyframes fadeInDownX { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInUpX { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }    
+
+
+
+
+
+
+
+        /* Menu Grid Container */
+        .menu-grid-container {
+            background-color: var(--white-color);
+            padding: 30px 40px; /* More padding */
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow-medium);
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Fewer columns initially */
+            gap: 40px; /* Increased gap */
+        }
+        .menu-category h3 {
+            font-size: 1.5rem; /* Slightly larger category title */
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 12px;
+            font-weight: 600;
+            display: inline-block; /* Fit content width */
+        }
+        .menu-category h3 i { margin-right: 12px; opacity: 0.9; }
+
+        /* App Grid Styles */
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Flexible grid for app items */
+            gap: 20px; /* Gap between app items */
+        }
+        .app-item {
+            display: flex;
+            flex-direction: column; /* Stack icon and text */
+            align-items: center; /* Center horizontally */
+            justify-content: center; /* Center vertically */
+            padding: 20px 10px;
+            text-align: center;
+            background-color: var(--light-color);
+            border: 1px solid #eaf0f6; /* Lighter border */
+            border-radius: var(--border-radius);
+            transition: transform var(--transition-speed), box-shadow var(--transition-speed), background-color var(--transition-speed);
+            color: var(--dark-color); /* Ensure text color is set */
+            min-height: 110px; /* Minimum height */
+        }
+        .app-item:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: var(--box-shadow-medium);
+            background-color: var(--white-color);
+            color: var(--primary-color); /* Change text color on hover */
+            border-color: var(--primary-color);
+        }
+        .app-item i {
+            display: block;
+            font-size: 2.2rem; /* Larger icon */
+            margin-bottom: 10px;
+            color: var(--primary-color); /* Icon color */
+            transition: color var(--transition-speed);
+        }
+        .app-item:hover i {
+             color: var(--primary-color); /* Ensure icon stays primary on hover */
+        }
+        .app-item span {
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: block;
+            line-height: 1.3; /* Adjust line height */
+        }
+
+        /* --- Popup Ad Styles --- */
+        .popup-ad-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Darker overlay */
+            backdrop-filter: blur(5px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+        }
+        .popup-ad-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .popup-ad-content {
+            background-color: var(--white-color);
+            padding: 35px 40px; /* More padding */
+            border-radius: var(--border-radius);
+            max-width: 550px; /* Slightly wider */
+            width: 90%; /* Responsive width */
+            text-align: center;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transform: scale(0.7) translateY(20px); /* Initial state */
+            opacity: 0;
+            transition: transform 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28), opacity 0.3s ease-out; /* Bounce effect */
+        }
+        .popup-ad-overlay.active .popup-ad-content {
+            transform: scale(1) translateY(0);
+            opacity: 1;
+        }
+        .popup-ad-content img {
+            max-width: 80%; /* Control image size */
+            height: auto;
+            margin: 0 auto 20px auto; /* Center image */
+            border-radius: 5px;
+        }
+        .popup-ad-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+        }
+        .popup-ad-content p {
+            color: var(--secondary-color);
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+        }
+        #popup-ad-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.1);
+            border: none;
+            color: var(--dark-color);
+            font-size: 1.6rem;
+            cursor: pointer;
+            padding: 0;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            border-radius: 50%;
+            transition: background-color var(--transition-speed), color var(--transition-speed), transform var(--transition-speed);
+        }
+        #popup-ad-close:hover {
+            background-color: var(--danger-color);
+            color: var(--white-color);
+            transform: rotate(90deg);
+        }
+
+
+        /* --- Footer Styles --- */
+        #main-footer { background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%); color: rgba(255, 255, 255, 0.8); padding: 60px 0 20px; margin-top: 70px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; margin-bottom: 40px; }
+        .footer-widget h4 { color: var(--white-color); font-size: 1.2rem; margin-bottom: 20px; position: relative; padding-bottom: 10px; font-weight: 600; }
+        .footer-widget h4::after { content: ''; position: absolute; left: 0; bottom: 0; height: 2px; width: 40px; background-color: var(--primary-color); }
+        .footer-widget p { font-size: 0.95rem; line-height: 1.8; margin-bottom: 15px; }
+        .footer-widget ul li { margin-bottom: 12px; }
+        .footer-widget ul li a { color: rgba(255, 255, 255, 0.8); font-size: 0.95rem; transition: color var(--transition-speed), padding-left var(--transition-speed); }
+        .footer-widget ul li a:hover { color: var(--white-color); padding-left: 5px; }
+        .footer-widget ul li a i { margin-right: 8px; width: 15px; color: var(--primary-color); }
+        .footer-contact-info i { margin-right: 10px; color: var(--primary-color); width: 20px; text-align: center; }
+        .footer-social-links a { color: rgba(255, 255, 255, 0.8); font-size: 1.4rem; margin-right: 15px; transition: color var(--transition-speed), transform var(--transition-speed); display: inline-block; }
+        .footer-social-links a:hover { color: var(--white-color); transform: scale(1.2); }
+        .footer-social-links a:last-child { margin-right: 0; }
+        .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: 25px; text-align: center; font-size: 0.9rem; color: rgba(255, 255, 255, 0.6); }
+        .footer-bottom a { color: var(--info-color); font-weight: 500; }
+        .footer-bottom a:hover { color: var(--white-color); text-decoration: underline; }
+
+        /* --- Animations --- */
+        @keyframes rotateIcon { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease-out, transform 0.7s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 992px) {
+            :root { --border-radius: 8px; } .section-title { font-size: 2rem; } .menu-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; padding: 30px; } .footer-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } .popup-ad-content { max-width: 90%; padding: 25px 30px;}
+        }
+        @media (max-width: 768px) {
+            h2 { font-size: 1.8rem; } .section-title { font-size: 1.9rem; margin-bottom: 40px; } section { padding: 50px 0; } #menu-page-section { padding-top: 30px; } .menu-grid { grid-template-columns: 1fr; gap: 30px; padding: 25px; } .menu-category h3 { font-size: 1.3rem; } .app-grid { grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 15px; } .app-item { padding: 15px 8px; min-height: 100px; } .app-item i { font-size: 1.8rem; } .app-item span { font-size: 0.85rem; } #main-nav { display: none; position: absolute; top: 100%; left: 0; width: 100%; background-color: var(--white-color); box-shadow: 0 10px 20px rgba(0,0,0,0.1); flex-direction: column; max-height: 0; overflow: hidden; transition: max-height 0.5s ease-out, box-shadow 0.5s ease-out; } #main-nav.active { display: flex; max-height: 500px; } #main-nav ul { flex-direction: column; width: 100%; padding: 10px 0; } #main-nav ul li { margin: 0; text-align: left; } #main-nav ul li a { display: block; padding: 15px 25px; border-bottom: 1px solid #eee; } #main-nav ul li:last-child a { border-bottom: none; } #main-nav ul li a::after { display: none; } #main-nav ul li a:hover { background-color: #f8f9fa; color: var(--primary-color); } .menu-toggle { display: block; } .footer-grid { grid-template-columns: 1fr; gap: 25px; } .footer-widget { text-align: center; } .footer-widget h4::after { left: 50%; transform: translateX(-50%); } .footer-contact-info li { text-align: center; justify-content: center;} .footer-contact-info i { display: inline-block; width: auto; } .popup-ad-content { padding: 25px; } .popup-ad-content h3 { font-size: 1.4rem; } .popup-ad-content p { font-size: 1rem; } #popup-ad-close { font-size: 1.4rem; width: 30px; height: 30px; line-height: 30px; }
+        }
+        @media (max-width: 576px) {
+             :root { --border-radius: 6px; } .container { padding: 0 15px; } section { padding: 40px 0; } #menu-page-section { padding-top: 20px; } .section-title { font-size: 1.7rem; margin-bottom: 30px;} .section-title i { font-size: 1.6rem; } .menu-intro p { font-size: 1rem; } .menu-grid-container { padding: 20px 15px; } .menu-grid { padding: 0; gap: 25px;} .menu-category h3 { font-size: 1.2rem; } .app-grid { grid-template-columns: repeat(3, 1fr); gap: 12px; } .app-item { min-height: 90px; padding: 12px 5px;} .app-item i { font-size: 1.6rem; margin-bottom: 6px;} .app-item span { font-size: 0.8rem; } .footer-grid { gap: 20px; } .footer-widget h4 { font-size: 1.1rem; } .footer-widget p, .footer-widget ul li a { font-size: 0.9rem; } .footer-bottom { font-size: 0.85rem; }
+        }
+    </style>
 </head>
-<body>
-    
-    
-    
+<body class="menu-page">
+
     <!-- Header -->
-<section class="header">
-    <nav id="navbar">
-        <a href="https://yourtopupcenter.github.io/home">
-            <img src="https://i.postimg.cc/Pxjg6DpL/Picsart-24-01-20-22-35-57-863.png">
-        </a>
-        <div class="nav-links">
-            <i class="fa fa-bars" id="menu-icon" onclick="toggleMenu()"></i>
-            <ul id="navMenu">
-                <li><a href="https://yourtopupcenter.github.io/home">HOME</a></li>
-                <li><a href="https://yourtopupcenter.github.io/products">PRODUCTS</a></li>
-                <li><a href="https://yourtopupcenter.github.io/offers">OFFER</a></li>
-                <li><a href="https://yourtopupcenter.github.io/blogs">BLOGS</a></li>
-                <li><a href="https://yourtopupcenter.github.io/about">ABOUT</a></li>
-                <li><a href="https://yourtopupcenter.github.io/contact">CONTACT US</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="text-box">
-        <h1>Menu</h1>
-    </div>
-    <br><br>
-      <div class="scroll-down">
-        <div class="scroll-text">Scroll Down</div>
-        <div class="arrow"></div>
-    </div>
-</section>
-
-
-<!-- End Of Header -->
-<section class="menu">
-    <h1>Your TopUp Center </h1>
-    <p>Top-up your favorite game credits at " Your TopUp Center " , your trusted online digital game store. You get your game credits fast in just 5 - 10 minutes. You can order by following just a few steps. Buy safely online with Nagad, bKash, Rocket. Our " Your TopUp Center " platform is a safe and reliable platform.</p>
-    
-    <h2>Important Links</h2><br>
-    <a href="https://yourtopupcenter.github.io/home/"><div class="i_links">
-       <i class="fa-solid fa-house"></i>&nbsp; Home
-   </div></a><br><br>
-   
-   <a href="https://yourtopupcenter.github.io/products/"><div class="i_links">
-       <i class="fa-solid fa-cart-shopping" ></i>&nbsp; Products
-   </div></a><br><br>
-   
-   <a href="https://yourtopupcenter.github.io/offers/"><div class="i_links">
-       <i class="fa-solid fa-face-grin-stars" ></i>&nbsp; Offers
-   </div></a><br><br>
-   <a href="https://yourtopupcenter.github.io/blogs/"><div class="i_links">
-       <i class="fa-solid fa-blog"></i>&nbsp; Blogs
-   </div></a><br><br>
-   <a href="https://yourtopupcenter.github.io/reseller/"><div class="i_links">
-       <i class="fa-solid fa-people-group"></i>&nbsp; Reseller Platfrom
-   </div></a><br><br>
-   
-   <a href="https://yourtopupcenter.github.io/about/"><div class="i_links">
-       <i class="fa-regular fa-address-card"></i>&nbsp; About Us
-   </div></a><br><br>
-   
-   <a href="https://yourtopupcenter.github.io/contact/"><div class="i_links">
-       <i class="fa-solid fa-headset"></i>&nbsp; Contact Us
-   </div></a><br><br>
-   
-   <a href="https://yourtopupcenter.github.io/terms/"><div class="i_links">
-       <i class="fa-solid fa-book"></i>&nbsp; Trems And Conditions
-   </div></a><br><br>
-   
-   <a href="https://yourtopupcenter.github.io/privacy/"><div class="i_links">
-       <i class="fa-solid fa-shield-halved"></i>&nbsp; Privacy Policies
-   </div></a><br><br>
-   
-  
-</section>
-
-
-<section class="som">
-    
-    <h1>Our Social MEDIA </h1>
-    <div class="somc">
-        <h2 id="sfacebook"><i class="fa-brands fa-facebook"></i> &nbsp; Facebook</h2><br><br>
-        
-        <p><i class="fa-brands fa-facebook"></i> &nbsp; ҒҒ Ɗïαm⊕ηd 𝑺𝒕𝒐𝒓𝒆 ƁÐ<br><b>Main Page &nbsp; | &nbsp; <a href="https://www.facebook.com/yourtopupcenterofficial" target="_blank" style="color: #00ffff;">Click Hear</a></b></p>
-        <br>
-        
-        <p><i class="fa-brands fa-facebook"></i> &nbsp; ҒҒ Ɗïαm⊕ηd 𝑺𝒕𝒐𝒓𝒆 ƁÐ  - News<br><b>Secondary Page &nbsp; | &nbsp; <a href="https://www.facebook.com/yourtopupcenterofficialnews" target="_blank" style="color: #00ffff;">Click Hear</a></b></p>
-        <br>
-        <p><i class="fa-brands fa-facebook"></i> &nbsp; ᴘʀɪɴᴄᴇ ＡＨ<br><b>Caption Page &nbsp; | &nbsp; <a href="https://www.facebook.com/alihosenofficialytc" target="_blank" style="color: #00ffff;">Click Hear</a></b></p>
-        <br>
-        <p><i class="fa-brands fa-facebook"></i> &nbsp; বিনোদোন ツ<br><b>Adda and Story Page &nbsp; | &nbsp; <a href="https://www.facebook.com/binodonytc" target="_blank" style="color: #00ffff;">Click Hear</a></b></p><br>
-        
-        <p><i class="fa-brands fa-facebook"></i> &nbsp; ҒҒ Ɗïαm⊕ηd 𝑺𝒕𝒐𝒓𝒆 ƁÐ Group<br><b>Main Group &nbsp; | &nbsp; <a href="https://facebook.com/groups/1140022886654380/" target="_blank" style="color: #00ffff;">Click Hear</a></b></p><br>
-        
-        <p><i class="fa-brands fa-facebook"></i> &nbsp; ҒҒ Ɗïαm⊕ηd 𝑺𝒕𝒐𝒓𝒆 ƁÐ  - News  |  Group<br><b>Secondary Group &nbsp; | &nbsp; <a href="https://facebook.com/groups/ytc24news/" target="_blank" style="color: #00ffff;">Click Hear</a></b></p><br>
-        
-        <p><i class="fa-brands fa-facebook"></i> &nbsp; 🇧🇩2nd__✖‿✖•𝕶𝖎𝖓𝖌 𝕺𝖋 𝕿𝖍𝖊 𝕶𝖎𝖑𝖆𝖗• ᴮᴬᴰʙᴏʏツ<br><b>Backup Group &nbsp; | &nbsp; <a href="https://facebook.com/groups/1418544855292250/" target="_blank" style="color: #00ffff;">Click Hear</a></b></p><br>
-        
-        <p><i class="fa-brands fa-facebook"></i> &nbsp; ᶜᴿᴬᶻᵞ𝙵𝚛𝚒𝚎𝚗𝚍𝚜 𝙲𝚕𝚞𝚋 °𝙵𝙵 𝙿𝙻𝙰𝚈𝙴𝚁𝚂 �‿�•<br><b>Adda Group &nbsp; | &nbsp; <a href="https://facebook.com/groups/796174835017195/" target="_blank" style="color: #00ffff;">Click Hear</a></b></p>
-        
-        
-        
-        
-        <h2 id="sinstra"><i class="fa-brands fa-instagram"></i> &nbsp; Instagram</h2><br><br>
-        
-        
-        <p><i class="fa-brands fa-instagram"></i> &nbsp; yourtopupcenterofficial<br><b>Official Account &nbsp; | &nbsp; <a href="https://www.instagram.com/yourtopupcenterofficial" target="_blank" style="color: #00ffff;">Click Hear</a></b></p>
-        
-        
-        <h2 id="syt"><i class="fa-brands fa-youtube"></i> &nbsp; YouTube</h2><br><br>
-        
-        
-        <p><i class="fa-brands fa-youtube"></i> &nbsp; Tech With AH<br><b>Official Channel &nbsp; | &nbsp; <a href="https://www.youtube.com/@techwithahofficial" target="_blank" style="color: #00ffff;">Click Hear</a></b></p>
-        
-        
-        
-        <h2 id="sx"><i class="fa-brands fa-x-twitter"></i> &nbsp; X [ Tweeter ]</h2><br><br>
-        
-        
-        <p><i class="fa-brands fa-x-twitter"></i> &nbsp; Your TopUp Center<br><b>Official Account &nbsp; | &nbsp; <a href="https://www.x.com/yourtopupcenter" target="_blank" style="color: #00ffff;">Click Hear</a></b></p>
-                
-        <h2 id="stiktok"><i class="fa-brands fa-tiktok"></i> &nbsp; TikTok</h2><br><br>
-        
-        
-        <p><i class="fa-brands fa-tiktok"></i> &nbsp; Your TopUp Center<br><b>Official Account &nbsp; | &nbsp; <a href="https://www.tiktok.com/@yourtopupcenter" target="_blank" style="color: #00ffff;">Click Hear</a></b></p>
-        
-        
-        <h2 id="st"><i class="fa-brands fa-telegram"></i> &nbsp; Telegram</h2><br><br>
-        
-        
-        <p><i class="fa-brands fa-telegram"></i> &nbsp; Your TopUp Center<br><b>Official Channel &nbsp; | &nbsp; <a href="https://www.t.me/yourtopupcenter" target="_blank" style="color: #00ffff;">Click Hear</a></b></p>
-    </div>
-</section>
-
-
-
-<div class="developer-section">
-        
-        <h1>DEVLOPER</h1><br><br>
-        <img src="https://i.postimg.cc/qvz74mgq/Picsart-24-08-28-18-36-31-257.jpg" alt="Developer Image" class="developer-image">
-        <div class="developer-name">Ali Hosen</div>
-        <div class="skills">
-           <p>Founder, CEO and Admin of Your TopUp Center </p><br>
-           <p>Ethical Hacker | Web Devloper and Designer | Cyber Security Expert | Graphic Designer | Digital Marketer 
-            
-        </div>
-        <div class="contact">
-            <h2>Contact</h2><br><br>
-            <ul>
-                <li><a href="tel:+880 1332-431178 "><i class="fa-solid fa-phone"></i></a></li>
-                
-                  <li><a href="mailto:alihosenyt08@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-                
-                
-                <li><a href="https://www.facebook.com/AHXPro" target="_blank" ><i class="fa-brands fa-facebook"></i></a></li>
-                
-                <li><a href="https://w.me/+8801332431178" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><a href="https://alihosenofficial.github.io" target="_blank"><i class="fa-solid fa-globe"></i></a></li>
-                </ul>
-        </div>
-    </div>
-
-
-
-
-
-    <section class="sm_ab">
-    
-    
-    <h1>Why Buy From "Your TopUp Center"?</h1>
-    <div class="container">
-        <p>You can easily and quickly top up your favorite games from Your TopUp Center. Moreover, we are constantly improving the purchase, delivery, and payment system processes for our customers. We keep trying to add more new products. So why delay? Order your desired product now.</p>
-
-        <div class="icon-section">
-            <div class="icon-box">
-                <i class="fa-solid fa-face-smile-beam" style="font-size: 30px; color: #006400"></i>
-
-                <div class="icon-title">Trusted</div>
-                <div class="icon-description">We sell products with complete trust.</div>
-            </div>
-            <div class="icon-box">
-                <i class="fa-solid fa-hand-holding-dollar" style="font-size: 30px; color: #006400;"></i>
-
-
-                <div class="icon-title">Low Rate</div>
-                <div class="icon-description">We try to keep prices as low as possible. <3</div>
-            </div>
-            <div class="icon-box">
-                <i class="fa-solid fa-clock-rotate-left" style="font-size: 30px; color: #006400;"></i>
-
-                <div class="icon-title">Instant Delivery</div>
-                <div class="icon-description">We usually take 5-10 minutes. But if there is any technical problem, it may take 30 minutes.</div>
-            </div>
-            <div class="icon-box">
-                <i class="fa-solid fa-headset" style="font-size: 30px; color: #006400;"></i>
-
-                <div class="icon-title">24/7 Customer Support</div>
-                <div class="icon-description">We offer 24/7 customer support. If you have any problem, contact us.</div>
-            </div>
-            <div class="icon-box">
-                <i class="fa-solid fa-credit-card" style="font-size: 30px; color: #006400;"></i>
-
-
-                <div class="icon-title">Easy Payments</div>
-                <div class="icon-description">Pay us very easily with 100% security.</div>
-            </div>
-        </div>
-    </div>
-
-
-</section>
-
-
-
-
-    
-    
- 
- <h1 id="payw">Pay With...</h1>
-    <section class="paym">
-        <div class="slidera">
-            <div class="slidesa">
-                <div class="slidea">
-                    <img src="https://i.postimg.cc/rF6ZRFF4/1656227518bkash-logo-png.webp" alt="Payment Method 1">
-                </div>
-                <div class="slidea">
-                    <img src="https://i.postimg.cc/CKHn77jY/1683082228nagad-transparent-logo.webp" alt="Payment Method 2">
-                </div>
-                <div class="slidea">
-                    <img src="https://i.postimg.cc/0Nw11XtR/mlogo.png" alt="Payment Method 3">
-                </div>
-            </div>
-            <div class="nav-arrow prev" onclick="showPrevSlideA()">&#10094;</div>
-            <div class="nav-arrow next" onclick="showNextSlideA()">&#10095;</div>
-        </div>
-    </section>
- 
- 
- 
- 
- 
-    
-    
- 
-<section class="support">
-<div class="support-container">
-    <div class="icon-wrapper" id="callIcon">
-        <a href="tel:+880 1781-146747" class="icon-call" title="Call"><i class="fas fa-phone-alt"></i></a>
-    </div>
-    <div class="icon-wrapper" id="whatsappIcon">
-        <a href="https://wa.me/+8801781146747" target="_blank" class="icon-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    </div>
-    <div class="icon-wrapper" id="telegramIcon">
-        <a href="https://t.me/YTC24_bot" target="_blank" class="icon-telegram" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
-    </div>
-    <div class="icon-wrapper" id="messengerIcon">
-        <a href="https://m.me/yourtopupcenterofficial" target="_blank" class="icon-messenger" title="Messenger"><i class="fab fa-facebook-messenger"></i></a>
-    </div>
-    <div class="support-icon" id="supportIcon">
-        <i class="fas fa-headset"></i>
-    </div>
-</div>
-
-<!-- Up Button -->
-<div class="up-button" id="upButton">
-    <i class="fas fa-arrow-up"></i>
-</div>
-
-</section>
-
-    
-    
-    <section class="popup">
-<div class="popup-container" id="popup">
-    <div class="popup-content">
-        Don’t miss out on exclusive offers! <a href="https://t.me/yourtopupcenter" target="_blank" style="color: #3bff00;"><b>Click Hear!</b></a>
-    </div>
-    <button class="close-btn" id="closePopup">&times;</button>
-</div>
-
-</section>
-    
-    
-    
-    
-    
-    <!-- Footer -->
-    
-    
-    
-<section class="mfooter">
-    
-    <footer class="footer">
-        <div class="company-info">
-            <img src="https://i.postimg.cc/xCB0dHGy/b295bb43-9ccd-47e2-aebd-900434a0a0fb.jpg" alt="Your TopUp Center">
-            <h1>Your TopUp Center</h1>
-        </div>
-        <div class="footer-container">
-            <div class="footer-section about-us">
-                <h2>About Us</h2>
-                <p id="fro">Top-up your favorite game credits at " Your TopUp Center " , your trusted online digital game store. You get your game credits fast in just 5 - 10 minutes. You can order by following just a few steps. Buy safely online with Nagad, bKash, Rocket. Our " Your TopUp Center " platform is a safe and reliable platform.</p>
-            </div>
-            <div class="footer-section contact-info">
-                <h2>Contact Information</h2>
-                <p>Email : <a href="mailto:ffdiamondstorebd@gmail.com" style="text-decoration: none; color: #fff;">ffdiamondstorebd@gmail.com</a></p>
-                <p>Phone : <a href="tel:+880 1781-146747" style="text-decoration: none; color: #fff;">+880 17811-46747</a></p>
-                <p>Address : <a href="https://maps.app.goo.gl/DQpiKEpmaRjnwb9U7" target="_blank" style="text-decoration: none; color: #fff;">Tarakandi, Sribordi, Sherpur, Mymensingh, Bangladesh</a></p>
-                <p>Support : <a href="https://t.me/YTC24_bot" target="_blank" style="text-decoration: none; color: #fff;">Telegram &nbsp <i class="fas fa-external-link-alt"></i></a></p>
-            </div>
-            <div class="footer-section important-links">
-                <h2>Important Links</h2>
+    <header id="main-header">
+        <div class="container">
+            <div class="logo"><a href="index.html">Your TopUp Center</a></div>
+            <nav id="main-nav">
                 <ul>
-                    <li><a href="https://yourtopupcenter.github.io/home" id="fr">Home</a></li>
-                    <li><a href="https://yourtopupcenter.github.io/products" id="fr">Products</a></li>
-                    <li><a href="https://yourtopupcenter.github.io/offers" id="fr">Offer</a></li>
-                    <li><a href="https://yourtopupcenter.github.io/reseller" id="fr">Reseller Platform</a></li>
-                    
-                    <li><a href="https://yourtopupcenter.github.io/about" id="fr">About</a></li>
-                    <li><a href="https://yourtopupcenter.github.io/contact" id="fr">Contact Us</a></li>
-                    <li><a href="https://yourtopupcenter.github.io/terms" id="fr">Terms and Conditions</a></li>
-                    <li><a href="https://yourtopupcenter.github.io/privacy" id="fr">Privacy Policies</a></li>
-                    <li><a href="https://yourtopupcenter.github.io/menu" id="fr">Menu</a></li>
+                    <li><a href="index.html#hero">হোম</a></li>
+                    <li><a href="products.html">প্রোডাক্টস</a></li>
+                    <li><a href="offers.html">অফার</a></li>
+                    <li><a href="#">ব্লগ</a></li>
+                    <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+            
+                   
+                    <li><a href="contact.html">যোগাযোগ</a></li>
+                
+                    <li><a href="menu.html" class="active">মেনু</a></li>
                 </ul>
-            </div>
-            <div class="footer-section social-media">
-                <h2>Social Media</h2>
-                <ul class="social-icons">
-                    <li><a href="https://www.facebook.com/yourtopupcenterofficial" target="_blank" ><i class="fab fa-facebook"></i></a></li>   
-                    <li><a href="https://wa.me/message/O5T2K7VX66VUP1" target="_blank" ><i class="fab fa-whatsapp"></i></a></li>             
-                    <li><a href="https://www.instagram.com/yourtopupcenterofficial" target="_blank" ><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://x.com/yourtopupcenter" target="_blank" ><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.youtube.com/@techwithahofficial" target="_blank" ><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="https://t.me/yourtopupcenterofficial" target="_blank" ><i class="fab fa-telegram"></i></a></li>
-                    <li><a href="https://www.tiktok.com/yourtopupcenter" target="_blank" ><i class="fab fa-tiktok"></i></a></li>
-                    
-                    <li><a href="https://yourtopupcenter.github.io/redirect/facebook"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://yourtopupcenter.github.io/redirect/whatsappgroup"><i class="fab fa-whatsapp"></i></a></li>
-                    <li><a href="https://yourtopupcenter.github.io/redirect/telegram"><i class="fab fa-telegram"></i></a></li>
-                </ul>
-            </div>
+            </nav>
+            <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
         </div>
-        <div class="footer-bottom">
-            <p id="fro">&copy; 2022 - 2024 Your TopUp Center | All Rights Reserved | V 5 | Devloper : <a href="https://alihosenofficial.github.io" target="_blank" style="color: #fff;">Ali Hosen</a></p>
+    </header>
+
+    <main>
+        <!-- Menu/Sitemap Section -->
+        <section id="menu-page-section">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-th-large"></i> সাইট নেভিগেশন</h2>
+                 <div class="menu-intro fade-in">
+                    <p>আমাদের সকল সেবা ও তথ্যের জগতে স্বাগতম। নিচের ক্যাটাগরি থেকে আপনার প্রয়োজনীয় লিঙ্কটি সহজেই খুঁজে নিন।</p>
+                </div>
+
+                 <!-- Notice Section -->
+                 <section id="menu-notice" class="fade-in" style="animation-delay: 0.2s;">
+                    <div class="container">
+                        <p><i class="fas fa-bullhorn"></i> নতুন অফার চলছে! নির্দিষ্ট গেম টপ-আপে ২০% পর্যন্ত ছাড়! বিস্তারিত <a href="offers.html" style="color: var(--warning-color); text-decoration: underline;">অফার পেজে</a> দেখুন।</p>
+                    </div>
+                 </section>
+
+                <div class="menu-grid-container fade-in" style="animation-delay: 0.4s;">
+                     <div class="menu-grid">
+                        <!-- Category 1: Main Navigation -->
+                        <div class="menu-category">
+                            <h3><i class="fas fa-compass"></i> প্রধান পাতা</h3>
+                             <div class="app-grid">
+                                 <a href="index.html#hero" class="app-item"><i class="fas fa-home"></i><span>হোম</span></a>
+                                 <a href="index.html#image-slider" class="app-item"><i class="fas fa-images"></i><span>স্লাইডার</span></a>
+                                 <a href="index.html#why-us" class="app-item"><i class="fas fa-thumbs-up"></i><span>কেন আমরা?</span></a>
+                                 <a href="index.html#reviews" class="app-item"><i class="fas fa-star"></i><span>রিভিউ</span></a>
+                                 <a href="index.html#video" class="app-item"><i class="fab fa-youtube"></i><span>টিউটোরিয়াল</span></a>
+                                 <a href="index.html#faq" class="app-item"><i class="fas fa-question-circle"></i><span>FAQ</span></a>
+                             </div>
+                        </div>
+
+                        <!-- Category 2: Products -->
+                        <div class="menu-category">
+                            <h3><i class="fas fa-shopping-cart"></i> প্রোডাক্টস</h3>
+                             <div class="app-grid">
+                                 <a href="products.html" class="app-item"><i class="fas fa-shopping-bag"></i><span>সকল প্রোডাক্ট</span></a>
+                                 <a href="products.html#recharge" class="app-item"><i class="fas fa-mobile-alt"></i><span>মোবাইল রিচার্জ</span></a>
+                                 <a href="freefire.html" class="app-item"><i class="fas fa-fire"></i><span>ফ্রি ফায়ার</span></a>
+                                 <a href="products.html?filter=pubg" class="app-item"><i class="fas fa-parachute-box"></i><span>পাবজি ইউসি</span></a>
+                                 <a href="products.html?filter=mlbb" class="app-item"><i class="fas fa-gamepad"></i><span>MLBB ডায়মন্ড</span></a>
+                                 <a href="products.html#utility" class="app-item"><i class="fas fa-file-invoice-dollar"></i><span>বিল পে</span></a>
+                                 <a href="products.html#gift-card" class="app-item"><i class="fas fa-gift"></i><span>গিফট কার্ড</span></a>
+                                 <a href="products.html#subscription" class="app-item"><i class="fas fa-tv"></i><span>সাবস্ক্রিপশন</span></a>
+                             </div>
+                        </div>
+
+                        <!-- Category 3: Information & Resources -->
+                        <div class="menu-category">
+                             <h3><i class="fas fa-info-circle"></i> তথ্য ও নীতি</h3>
+                              <div class="app-grid">
+                                 <a href="about.html" class="app-item"><i class="fas fa-building"></i><span>আমাদের সম্পর্কে</span></a>
+                                 <a href="index.html#blogs" class="app-item"><i class="fas fa-blog"></i><span>ব্লগ</span></a>
+                                 <a href="terms.html" class="app-item"><i class="fas fa-file-contract"></i><span>শর্তাবলী</span></a>
+                                 <a href="privacy.html" class="app-item"><i class="fas fa-user-secret"></i><span>গোপনীয়তা</span></a>
+                                 <a href="#" class="app-item"><i class="fas fa-undo-alt"></i><span>রিফান্ড নীতি</span></a>
+                             </div>
+                        </div>
+
+                         <!-- Category 4: Support -->
+                        <div class="menu-category">
+                            <h3><i class="fas fa-headset"></i> সহায়তা</h3>
+                             <div class="app-grid">
+                                 <a href="contact.html" class="app-item"><i class="fas fa-envelope"></i><span>যোগাযোগ</span></a>
+                                 <a href="report.html" class="app-item"><i class="fas fa-exclamation-triangle"></i><span>রিপোর্ট করুন</span></a>
+                                  <a href="#" class="app-item"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+                                  <a href="#" class="app-item"><i class="fab fa-facebook-messenger"></i><span>Messenger</span></a>
+                                  <a href="#" class="app-item"><i class="fas fa-phone-alt"></i><span>কল করুন</span></a>
+                             </div>
+                        </div>
+
+                         <!-- Category 5: Special Programs -->
+                        <div class="menu-category">
+                             <h3><i class="fas fa-rocket"></i> বিশেষ</h3>
+                             <div class="app-grid">
+                                 <a href="offers.html" class="app-item"><i class="fas fa-tags"></i><span>চলমান অফার</span></a>
+                                 <a href="reselling.html" class="app-item"><i class="fas fa-store"></i><span>রিসেলিং</span></a>
+                                 <a href="#" class="app-item"><i class="fas fa-users"></i><span>কমিউনিটি</span></a>
+                             </div>
+                        </div>
+
+                         <!-- Category 6: Company & Social -->
+                        <div class="menu-category">
+                            <h3><i class="fas fa-share-alt"></i> সোশ্যাল মিডিয়া</h3>
+                            <div class="app-grid">
+                                 <a href="about.html#ceo" class="app-item"><i class="fas fa-user-tie"></i><span>CEO বার্তা</span></a>
+                                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="app-item"><i class="fab fa-facebook-f"></i><span>ফেসবুক</span></a>
+                                 <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="app-item"><i class="fab fa-youtube"></i><span>ইউটিউব</span></a>
+                                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="app-item"><i class="fab fa-instagram"></i><span>ইন্সটাগ্রাম</span></a>
+                                   <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="app-item"><i class="fab fa-twitter"></i><span>টুইটার</span></a>
+                            </div>
+                        </div>
+
+                    </div> <!-- /.menu-grid -->
+                </div> <!-- /.menu-grid-container -->
+            </div> <!-- /.container -->
+        </section> <!-- /#menu-page-section -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-widget">
+                    <h4><i class="fas fa-info-circle"></i> Your TopUp Center</h4>
+                    <p>আপনার বিশ্বস্ত ডিজিটাল সেবার ঠিকানা। মোবাইল রিচার্জ, গেম টপ-আপ, বিল পেমেন্ট সহ আরো অনেক সেবা নিন সহজে ও নিরাপদে।</p>
+                    <div class="footer-social-links">
+                        <a href="https://www.facebook.com/yourtopupcenterofficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://youtube.com/@techwithahofficial?si=S317t17KNYjqGcKl" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/yourtopupcenterofficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/yourtopupcenter" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://t.me/YTC24_bot" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-widget">
+                    <h4><i class="fas fa-link"></i> প্রয়োজনীয় লিংক</h4>
+                    <ul>
+                        <li><a href="/home"><i class="fas fa-angle-right"></i> Home</a></li>
+                        
+                        <li><a href="/products"><i class="fas fa-angle-right"></i> Products</a></li>
+       <li><a href="#"><i class="fas fa-angle-right"></i> Offer</a></li>
+                        <li><a href="/blogs"><i class="fas fa-angle-right"></i> Blogs</a></li>
+                        <li><a href="/resller"><i class="fas fa-angle-right"></i> Reseller Platfrom</a></li>
+                        <li><a href="/about"><i class="fas fa-angle-right"></i> About</a></li>
+                         <li><a href="/contact"><i class="fas fa-angle-right"></i> Contact</a></li>
+                          <li><a href="/terms"><i class="fas fa-angle-right"></i> Tarms and Conditions</a></li>
+                           <li><a href="/privacy"><i class="fas fa-angle-right"></i> Privacy and Policies</a></li>
+                           
+                                     <li><a href="/menu"><i class="fas fa-angle-right"></i> Menu</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget" id="footer-contact">
+                    <h4><i class="fas fa-address-book"></i> যোগাযোগ</h4>
+                    <ul class="footer-contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> শ্রীবরদী, শেরপুর, ময়মনসিংহ, বাংলাদেশ</li>
+                        <li><a href="tel:+8801781146747"><i class="fas fa-phone-alt"></i> +880 1781-146747</a></li>
+                        <li><a href="mailto:ffdiamondstorebd@gmail.com"><i class="fas fa-envelope"></i> ffdiamondstorebd@gmail.com</a></li>
+                        <li><i class="fab fa-facebook-messenger"></i><a href="https://m.me/yourtopupcenterofficial"></a>Messenger Chat</li>
+                        <li><i class="fab fa-whatsapp"></i><a href="https://w.me/+8801781146747">WhatsApp</a></li>
+                          <li><i class="fab fa-telegram"></i><a href="https://t.me/YTC24_bot">Telegram</a></li>
+                         <li><i class="fas fa-clock"></i> সাপোর্ট: ২৪/৭ খোলা</li>
+                    </ul>
+                </div>
+
+                 <div class="footer-widget">
+                    <h4><i class="fas fa-envelope-open-text"></i> নিউজলেটার</h4>
+                    <p>সর্বশেষ অফার এবং আপডেটের জন্য সাইন আপ করুন।</p>
+                    <form id="newsletter-form" style="display: flex;">
+                         <input type="email" placeholder="আপনার ইমেইল" required style="flex-grow: 1; padding: 10px; border: none; border-radius: 4px 0 0 4px; font-family: var(--body-font);">
+                         <button type="submit" class="btn" style="border-radius: 0 4px 4px 0; padding: 10px 15px; font-size: 1rem; box-shadow: none;"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                 </div>
+            </div>
+
+            <div class="footer-bottom">
+                কপিরাইট © <span id="current-year"></span> Your TopUp Center. সর্বস্বত্ব সংরক্ষিত। একটি  U Tech এর প্ল্যাটফ্রম! ভার্সন : 10.1<br>
+                ডেভেলপড উইথ <i class="fas fa-heart" style="color: #e74c3c;"></i> বাই <a href="https://utech-llc.github.io/webux" target="_blank" rel="noopener noreferrer">WebUX Solution</a>
+            </div>
         </div>
     </footer>
-</section>
 
 
 
-<!-- End Of Footer -->
+    <!-- Floating Support Widget -->
+    <div class="support-widget">
+        <div class="support-options" id="support-options">
+            <!-- Added data-tooltip -->
+            <a href="https://wa.me/+8801781146747" target="_blank" rel="noopener noreferrer" class="support-option whatsapp" aria-label="WhatsApp" data-tooltip="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://m.me/yourtopupcenterofficial" target="_blank" rel="noopener noreferrer" class="support-option messenger" aria-label="Messenger" data-tooltip="Messenger">
+                <i class="fab fa-facebook-messenger"></i>
+            </a>
+             <a href="https://t.me/YTC24_bot" target="_blank" rel="noopener noreferrer" class="support-option telegram" aria-label="Telegram" data-tooltip="Telegram">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+             <a href="tel:01781146747" class="support-option call" aria-label="Call" data-tooltip="কল করুন">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+        </div>
+        <button class="support-main-btn" id="support-main-btn" aria-label="Support Options">
+             <i class="fas fa-headset"></i> <!-- Default icon -->
+             <i class="fas fa-times"></i> <!-- Icon shown when active -->
+        </button>
+    </div>
+
+    <!-- Fixed Ad Banner -->
+    <div class="fixed-ad-banner" id="fixed-ad-banner">
+        <div class="ad-content">
+            <i class="fab fa-facebook-f"></i> <!-- Ad icon -->
+            <span>Latest সব আপডেট পেতে এখুনি আমাদের <a href="https://www.faebook.com/yourtopupcenterofficial">ফেসবুক পেজ</a> ভিজিট করুন!  </span>
+        </div>
+        <button class="ad-close-btn" id="ad-close-btn" aria-label="Close Ad">
+            ×
+        </button>
+    </div>
+
+     <!-- Popup Ad Modal -->
+     <div class="popup-ad-overlay" id="popup-ad-modal">
+         <div class="popup-ad-content">
+             <button id="popup-ad-close" aria-label="Close Popup">×</button>
+             <!-- Replace with your ad content -->
+              <img src="https://i.postimg.cc/Z59qj6fy/Picsart_24-08-27_13-00-16-092.jpg!" alt="Special Offer Ad">
+              <h3>বিশেষ ঘোষণা!</h3>
+              <p>এখন বিকাশ পেমেন্টে পাচ্ছেন ৫% ইনস্ট্যান্ট ক্যাশব্যাক! সীমিত সময়ের জন্য।</p>
+              <a href="offers.html" class="btn">অফার দেখুন <i class="fas fa-arrow-right"></i></a>
+         </div>
+     </div>
+     
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Menu Page DOM Loaded");
+
+            // --- Standard page setup ---
+            const menuToggle = document.getElementById('menu-toggle');
+            const mainNav = document.getElementById('main-nav');
+             if (menuToggle && mainNav) {
+                 menuToggle.addEventListener('click', () => { mainNav.classList.toggle('active'); const icon = menuToggle.querySelector('i'); icon.classList.toggle('fa-bars'); icon.classList.toggle('fa-times'); });
+                 mainNav.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { if (mainNav.classList.contains('active')) { mainNav.classList.remove('active'); const icon = menuToggle.querySelector('i'); icon.classList.remove('fa-times'); icon.classList.add('fa-bars'); } }); });
+                 document.addEventListener('click', (event) => { if (mainNav.classList.contains('active') && !mainNav.contains(event.target) && !menuToggle.contains(event.target)) { mainNav.classList.remove('active'); const icon = menuToggle.querySelector('i'); icon.classList.remove('fa-times'); icon.classList.add('fa-bars'); } });
+            }
+
+            const body = document.body;
+            const header = document.getElementById('main-header');
+             if (header) { const scrollThreshold = 50; window.addEventListener('scroll', () => { if (window.scrollY > scrollThreshold) { body.classList.add('scrolled'); } else { body.classList.remove('scrolled'); } }); }
+
+             const fadeElements = document.querySelectorAll('.fade-in');
+             if ("IntersectionObserver" in window && fadeElements.length > 0) { const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -30px 0px" }; const observer = new IntersectionObserver((entries, observer) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }); }, observerOptions); fadeElements.forEach(el => observer.observe(el)); }
+             else { fadeElements.forEach(el => el.classList.add('visible')); }
+
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) { yearSpan.textContent = new Date().getFullYear(); }
+
+              const newsletterForm = document.getElementById('newsletter-form');
+              if(newsletterForm) { newsletterForm.addEventListener('submit', (e) => { e.preventDefault(); alert('ধন্যবাদ! আপনার ইমেইল সাবস্ক্রাইব করা হয়েছে (Placeholder)।'); newsletterForm.reset(); }); }
+
+            // --- Popup Ad Logic ---
+            const popupModal = document.getElementById('popup-ad-modal');
+            const popupCloseBtn = document.getElementById('popup-ad-close');
+            const showPopupAfter = 3000; // Show after 3 seconds (adjust as needed)
+            const popupClosedKey = 'menuPopupAdClosed'; // Key for sessionStorage
+
+            if (popupModal && popupCloseBtn) {
+                // Function to show the popup
+                const showPopup = () => {
+                     try {
+                        // Check if it was closed this session
+                        if (sessionStorage.getItem(popupClosedKey) !== 'true') {
+                            console.log("Showing Popup Ad");
+                            popupModal.classList.add('active');
+                        } else {
+                            console.log("Popup Ad previously closed this session.");
+                        }
+                    } catch (e) { // Handle potential SecurityError
+                        console.warn("Could not access sessionStorage. Showing popup anyway.");
+                        popupModal.classList.add('active');
+                    }
+                };
+
+                // Function to close the popup
+                const closePopup = () => {
+                    popupModal.classList.remove('active');
+                    console.log("Popup Ad closed");
+                     try {
+                       // Mark as closed for this session
+                       sessionStorage.setItem(popupClosedKey, 'true');
+                    } catch (e) {
+                        console.warn("Could not set sessionStorage item for popup ad.");
+                    }
+                };
+
+                // Show popup after delay
+                setTimeout(showPopup, showPopupAfter);
+
+                // Close button listener
+                popupCloseBtn.addEventListener('click', closePopup);
+
+                // Optional: Close on overlay click
+                 popupModal.addEventListener('click', (event) => {
+                     // Check if the click is directly on the overlay (not the content inside)
+                     if (event.target === popupModal) {
+                         closePopup();
+                     }
+                 });
+
+            } else {
+                console.error("Popup Ad Modal or Close Button not found!");
+            }
+
+        }); // End DOMContentLoaded
+        
+        
+        
+                 document.addEventListener('DOMContentLoaded', function() {
+            console.log("DOM Loaded - Advanced Floating Elements");
+
+            // --- Standard Setup ---
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) { yearSpan.textContent = new Date().getFullYear(); }
+
+            // --- Floating Support Button Logic ---
+            const supportMainBtn = document.getElementById('support-main-btn');
+            const supportOptions = document.getElementById('support-options');
+
+            if (supportMainBtn && supportOptions) {
+                supportMainBtn.addEventListener('click', (e) => {
+                    e.stopPropagation(); // Prevent click from immediately closing via document listener
+                    console.log("Support button toggled");
+                    supportMainBtn.classList.toggle('active');
+                    supportOptions.classList.toggle('active');
+                });
+
+                // Close options if clicking outside
+                document.addEventListener('click', (event) => {
+                    if (supportOptions.classList.contains('active') &&
+                        !supportMainBtn.contains(event.target) &&
+                        !supportOptions.contains(event.target))
+                    {
+                        console.log("Clicked outside support widget - closing");
+                        supportMainBtn.classList.remove('active');
+                        supportOptions.classList.remove('active');
+                    }
+                });
+
+            } else { console.error("Support button or options element not found!"); }
 
 
+            // --- Fixed Ad Banner Logic ---
+            const adBanner = document.getElementById('fixed-ad-banner');
+            const adCloseBtn = document.getElementById('ad-close-btn');
+
+            if (adBanner && adCloseBtn) {
+                 adCloseBtn.addEventListener('click', () => {
+                     console.log("Ad close button clicked");
+                    adBanner.classList.add('hidden');
+                    // Set a flag in sessionStorage to keep it closed for the session
+                    try { // Use try-catch for potential SecurityError in sandboxed environments
+                       sessionStorage.setItem('adBannerClosed', 'true');
+                    } catch (e) {
+                       console.warn("Could not set sessionStorage item for ad banner.");
+                    }
+                 });
+
+                 // Check if ad was previously closed in this session
+                 try {
+                    if (sessionStorage.getItem('adBannerClosed') === 'true') {
+                       adBanner.style.display = 'none'; // Hide immediately, no animation needed if already closed
+                       console.log("Ad banner was previously closed in this session.");
+                    } else {
+                         // Ensure the entry animation plays only if not previously closed
+                         adBanner.style.animationPlayState = 'running'; // Explicitly start if needed
+                    }
+                 } catch (e) {
+                    console.warn("Could not access sessionStorage to check ad banner state.");
+                 }
 
 
+            } else { console.error("Ad banner or close button element not found!"); }
 
 
+            // --- Header/Menu Toggle Logic ---
+            const menuToggle = document.getElementById('menu-toggle');
+            const mainNav = document.getElementById('main-nav');
+            if (menuToggle && mainNav) {
+                 menuToggle.addEventListener('click', () => { /* ... */ });
+                 // Add other menu closing logic if needed
+            }
 
-    <script src="script.js">
+            // --- Intersection Observer for general fade-in ---
+            const fadeElements = document.querySelectorAll('.fade-inX');
+             if ("IntersectionObserver" in window && fadeElements.length > 0) { /* ... */ }
+             else { /* Fallback */ }
+
+        }); // End DOMContentLoaded
+        
+    
     </script>
-    </body>
-										       </html>
+
+</body>
+</html>
